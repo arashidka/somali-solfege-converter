@@ -205,3 +205,8 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Temporary audio files
+temp_extracted_audio.wav
+*.tmp.wav
+*.tmp.mp3
