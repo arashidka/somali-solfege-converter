@@ -55,7 +55,7 @@ def yin_pitch_detection(audio_samples, sr, frame_length=2048, hop_length=512,
         # Step 1: Difference function
         diff = np.zeros(lag_max)
         for lag in range(lag_min, lag_max):
-            for j in range(frame_length - lag_max):
+            for j in range(frame_length - lag):
                 delta = frame[j] - frame[j + lag]
                 diff[lag] += delta * delta
         
