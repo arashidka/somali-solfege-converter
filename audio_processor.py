@@ -134,12 +134,12 @@ def prepare_audio_input(file_path, target_sr=22050):
     del data
     gc.collect()
     
-    duration = len(samples) / target_sr
-    print(f"✅ Done. Loaded {duration:.2f}s of audio at {target_sr}Hz.")
+    duration = len(samples) / sr
+    print(f"✅ Done. Loaded {duration:.2f}s of audio at {sr}Hz.")
     print(f"   Audio shape: {samples.shape}, dtype: {samples.dtype}")
     print(f"   Value range: [{samples.min():.3f}, {samples.max():.3f}]")
     
-    return samples, target_sr
+    return samples, sr
 
 
 def get_audio_info(file_path):
