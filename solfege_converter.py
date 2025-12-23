@@ -10,6 +10,7 @@ Educational purpose: Study intervalic relationships of melodies.
 
 import argparse
 import sys
+import traceback
 from pathlib import Path
 from typing import List, Tuple, Optional
 
@@ -47,7 +48,6 @@ class SolfegeConverter:
         """
         self.use_chromatic = use_chromatic
         self.key = key
-        self.solfege_map = SOLFEGE_CHROMATIC if use_chromatic else SOLFEGE_DIATONIC
     
     def load_audio(self, file_path: str) -> Tuple[np.ndarray, int]:
         """
@@ -78,15 +78,16 @@ class SolfegeConverter:
         """
         # Use librosa's pyin (Probabilistic YIN) for pitch tracking
         # This is good for monophonic melodies
+        hop_length = 512
         f0, voiced_flag, voiced_probs = librosa.pyin(
             audio,
             fmin=librosa.note_to_hz('C2'),  # Lowest note: C2
             fmax=librosa.note_to_hz('C7'),   # Highest note: C7
-            sr=sr
+            sr=sr,
+            hop_length=hop_length
         )
         
-        # Create timestamps
-        hop_length = 512
+        # Create timestamps using the same hop_length
         timestamps = librosa.frames_to_time(
             np.arange(len(f0)), 
             sr=sr, 
@@ -184,6 +185,7 @@ class SolfegeConverter:
         # Process pitches
         notes = []
         current_note = None
+        current_hz = None
         note_start_time = None
         
         for i, (hz, time) in enumerate(zip(pitches_hz, timestamps)):
@@ -203,11 +205,12 @@ class SolfegeConverter:
                             'midi': current_note,
                             'note': note_name,
                             'solfege': solfege,
-                            'hz': pitches_hz[i-1] if i > 0 else hz
+                            'hz': current_hz
                         })
                 
                 # Start new note
                 current_note = midi_note
+                current_hz = hz
                 note_start_time = time
         
         # Add last note
@@ -222,7 +225,7 @@ class SolfegeConverter:
                     'midi': current_note,
                     'note': note_name,
                     'solfege': solfege,
-                    'hz': pitches_hz[-1]
+                    'hz': current_hz
                 })
         
         return notes
@@ -339,7 +342,6 @@ def main():
         
     except Exception as e:
         print(f"Error during conversion: {e}")
-        import traceback
         traceback.print_exc()
         sys.exit(1)
 
