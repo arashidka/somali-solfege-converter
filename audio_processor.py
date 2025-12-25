@@ -80,7 +80,7 @@ def prepare_audio_input(file_path, target_sr=22050):
             video = VideoFileClip(file_path)
             if video.audio is None:
                 raise ValueError(f"Video file has no audio track: {file_path}")
-            video.audio.write_audiofile(temp_audio, fps=target_sr, verbose=False, logger=None)
+            video.audio.write_audiofile(temp_audio, fps=target_sr, logger=None)
             video.close()  # Close file handle immediately
             load_path = temp_audio
             del video

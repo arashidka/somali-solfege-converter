@@ -37,15 +37,17 @@ def example_video_extraction():
     print("Example 2: Video to Audio Extraction")
     print("=" * 60)
     
-    # This is a placeholder example
-    # samples, sr = prepare_audio_input("your_video.mp4", target_sr=22050)
-    # print(f"Extracted {len(samples)/sr:.2f}s of audio from video")
+    # Extract audio from testVideo.mp4
+    try:
+        samples, sr = prepare_audio_input("testVideo.mp4", target_sr=22050)
+        print(f"✅ Successfully extracted {len(samples)/sr:.2f}s of audio from testVideo.mp4")
+        print(f"   Sample rate: {sr}Hz")
+        print(f"   Number of samples: {len(samples):,}")
+        print(f"   Audio range: [{samples.min():.3f}, {samples.max():.3f}]")
+    except Exception as e:
+        print(f"❌ Error processing testVideo.mp4: {e}")
+        print("   Make sure the file exists in the project folder")
     
-    print("To use this example:")
-    print("1. Replace 'your_video.mp4' with your actual video file path")
-    print("2. Uncomment the code above")
-    print("3. Run this script")
-    print("Supported video formats: .mp4, .mov, .avi, .mkv")
     print()
 
 
@@ -57,17 +59,19 @@ def example_file_info():
     print("Example 3: Get File Information")
     print("=" * 60)
     
-    # This is a placeholder example
-    # info = get_audio_info("your_file.mp4")
-    # print(f"File: {info['path']}")
-    # print(f"Format: {info['extension']}")
-    # print(f"Size: {info['size_mb']:.2f} MB")
-    # print(f"Duration: {info['duration']:.2f}s")
+    # Get info about testVideo.mp4
+    try:
+        info = get_audio_info("testVideo.mp4")
+        print(f"✅ File: {info['path']}")
+        print(f"   Format: {info['extension']}")
+        print(f"   Size: {info['size_mb']:.2f} MB")
+        print(f"   Duration: {info['duration']:.2f}s")
+        print(f"   Sample rate: {info['sample_rate']}Hz")
+        print(f"   Channels: {info['channels']}")
+    except Exception as e:
+        print(f"❌ Error getting file info: {e}")
+        print("   Make sure testVideo.mp4 exists in the project folder")
     
-    print("To use this example:")
-    print("1. Replace 'your_file.mp4' with your actual file path")
-    print("2. Uncomment the code above")
-    print("3. Run this script")
     print()
 
 
