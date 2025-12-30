@@ -6,6 +6,7 @@ Tests the YIN algorithm and note segmentation functionality.
 
 import sys
 import os
+import pytest
 import numpy as np
 from scipy.io import wavfile
 
@@ -27,53 +28,27 @@ def test_pitch_detection_with_sine_wave():
     print("Test 1: Pitch Detection with Sine Wave")
     print("=" * 60)
     
-    try:
-        # Create a 440Hz sine wave (A4 note)
-        sr = 22050
-        duration = 1.0
-        frequency = 440.0
-        
-        t = np.linspace(0, duration, int(sr * duration))
-        samples = np.sin(2 * np.pi * frequency * t).astype(np.float32)
-        
-        # Detect pitch
-        times, pitches = yin_pitch_detection(samples, sr, 
-                                             frame_length=2048, 
-                                             hop_length=512,
-                                             threshold=0.1)
-        
-        # Check detected pitches
-        voiced_pitches = pitches[pitches > 0]
-        if len(voiced_pitches) > 0:
-            mean_pitch = np.mean(voiced_pitches)
-            pitch_std = np.std(voiced_pitches)
-            
-            print(f"✅ Created {duration}s sine wave at {frequency}Hz")
-            print(f"   Detected {len(times)} frames")
-            print(f"   Mean detected pitch: {mean_pitch:.1f} Hz")
-            print(f"   Standard deviation: {pitch_std:.1f} Hz")
-            print(f"   Pitch accuracy: {abs(mean_pitch - frequency):.1f} Hz error")
-            
-            # Check if detection is reasonably accurate (within 25 Hz for 22.05kHz sampling)
-            if abs(mean_pitch - frequency) < 25:
-                print(f"✅ Pitch detection accurate (< 25 Hz error)")
-                print()
-                return True
-            else:
-                print(f"⚠️ Pitch detection has large error (> 25 Hz)")
-                print()
-                return False
-        else:
-            print(f"❌ No pitch detected")
-            print()
-            return False
-            
-    except Exception as e:
-        print(f"❌ Test failed: {e}")
-        import traceback
-        traceback.print_exc()
-        print()
-        return False
+    # Create a 440Hz sine wave (A4 note)
+    sr = 22050
+    duration = 1.0
+    frequency = 440.0
+
+    t = np.linspace(0, duration, int(sr * duration))
+    samples = np.sin(2 * np.pi * frequency * t).astype(np.float32)
+
+    # Detect pitch
+    times, pitches = yin_pitch_detection(samples, sr,
+                                         frame_length=2048,
+                                         hop_length=512,
+                                         threshold=0.1)
+
+    # Check detected pitches
+    voiced_pitches = pitches[pitches > 0]
+    assert len(voiced_pitches) > 0, "No voiced pitches detected"
+
+    mean_pitch = np.mean(voiced_pitches)
+    pitch_std = np.std(voiced_pitches)
+    assert abs(mean_pitch - frequency) < 25, f"Pitch error too large: {abs(mean_pitch-frequency):.1f} Hz"
 
 
 def test_pitch_smoothing():
@@ -82,31 +57,13 @@ def test_pitch_smoothing():
     print("Test 2: Pitch Smoothing")
     print("=" * 60)
     
-    try:
-        # Create pitch track with outliers
-        pitches = np.array([200, 205, 199, 500, 201, 203, 0, 0, 210, 205])
-        
-        smoothed = smooth_pitch_track(pitches, kernel_size=3)
-        
-        print(f"✅ Original pitches: {pitches}")
-        print(f"   Smoothed pitches: {smoothed}")
-        
-        # Check that outlier (500) was reduced
-        if smoothed[3] < pitches[3]:
-            print(f"✅ Outlier reduction successful (500 Hz → {smoothed[3]:.1f} Hz)")
-            print()
-            return True
-        else:
-            print(f"⚠️ Outlier not reduced")
-            print()
-            return False
-            
-    except Exception as e:
-        print(f"❌ Test failed: {e}")
-        import traceback
-        traceback.print_exc()
-        print()
-        return False
+    # Create pitch track with outliers
+    pitches = np.array([200, 205, 199, 500, 201, 203, 0, 0, 210, 205])
+
+    smoothed = smooth_pitch_track(pitches, kernel_size=3)
+
+    # Check that outlier (500) was reduced
+    assert smoothed[3] < pitches[3], f"Outlier not reduced: {smoothed[3]} >= {pitches[3]}"
 
 
 def test_note_segmentation():
@@ -115,52 +72,29 @@ def test_note_segmentation():
     print("Test 3: Note Segmentation")
     print("=" * 60)
     
-    try:
-        # Create a pitch track with 3 distinct notes
-        sr = 22050
-        hop_length = 512
-        
-        # Times: 0, 0.023, 0.046, ... (512 samples apart)
-        times = np.arange(100) * hop_length / sr
-        
-        # Create 3 notes: 200Hz, silence, 300Hz, silence, 250Hz
-        pitches = np.concatenate([
-            np.full(20, 200.0),  # Note 1: 200 Hz
-            np.full(10, 0.0),     # Silence
-            np.full(20, 300.0),  # Note 2: 300 Hz
-            np.full(10, 0.0),     # Silence
-            np.full(20, 250.0),  # Note 3: 250 Hz
-            np.full(20, 0.0)      # Trailing silence
-        ])
-        
-        # Segment notes
-        notes = segment_notes(times, pitches, 
-                             min_note_duration=0.1, 
-                             pitch_tolerance=20)
-        
-        print(f"✅ Created synthetic pitch track with 3 notes")
-        print(f"   Detected {len(notes)} notes")
-        
-        for i, note in enumerate(notes):
-            print(f"   Note {i+1}: {note['mean_pitch']:.1f} Hz, "
-                  f"duration: {note['duration']:.2f}s, "
-                  f"time: {note['start_time']:.2f}-{note['end_time']:.2f}s")
-        
-        if len(notes) == 3:
-            print(f"✅ Correct number of notes detected")
-            print()
-            return True
-        else:
-            print(f"⚠️ Expected 3 notes, got {len(notes)}")
-            print()
-            return False
-            
-    except Exception as e:
-        print(f"❌ Test failed: {e}")
-        import traceback
-        traceback.print_exc()
-        print()
-        return False
+    # Create a pitch track with 3 distinct notes
+    sr = 22050
+    hop_length = 512
+
+    # Times: 0, 0.023, 0.046, ... (512 samples apart)
+    times = np.arange(100) * hop_length / sr
+
+    # Create 3 notes: 200Hz, silence, 300Hz, silence, 250Hz
+    pitches = np.concatenate([
+        np.full(20, 200.0),  # Note 1: 200 Hz
+        np.full(10, 0.0),     # Silence
+        np.full(20, 300.0),  # Note 2: 300 Hz
+        np.full(10, 0.0),     # Silence
+        np.full(20, 250.0),  # Note 3: 250 Hz
+        np.full(20, 0.0)      # Trailing silence
+    ])
+
+    # Segment notes
+    notes = segment_notes(times, pitches,
+                         min_note_duration=0.1,
+                         pitch_tolerance=20)
+
+    assert len(notes) == 3, f"Expected 3 notes, got {len(notes)}"
 
 
 def test_frequency_conversions():
@@ -169,42 +103,17 @@ def test_frequency_conversions():
     print("Test 4: Frequency Conversions")
     print("=" * 60)
     
-    try:
-        # Test A4 = 440 Hz = MIDI 69
-        freq = 440.0
-        midi = hz_to_midi(freq)
-        note_name = midi_to_note_name(midi)
-        
-        print(f"   {freq} Hz → MIDI {midi:.1f} → {note_name}")
-        
-        if abs(midi - 69) < 0.1 and note_name == "A4":
-            print(f"✅ A4 conversion correct")
-        else:
-            print(f"⚠️ A4 conversion incorrect")
-            return False
-        
-        # Test C4 = 261.63 Hz = MIDI 60
-        freq = 261.63
-        midi = hz_to_midi(freq)
-        note_name = midi_to_note_name(midi)
-        
-        print(f"   {freq} Hz → MIDI {midi:.1f} → {note_name}")
-        
-        if abs(midi - 60) < 0.1 and note_name == "C4":
-            print(f"✅ C4 conversion correct")
-        else:
-            print(f"⚠️ C4 conversion incorrect")
-            return False
-        
-        print()
-        return True
-        
-    except Exception as e:
-        print(f"❌ Test failed: {e}")
-        import traceback
-        traceback.print_exc()
-        print()
-        return False
+    # Test A4 = 440 Hz = MIDI 69
+    freq = 440.0
+    midi = hz_to_midi(freq)
+    note_name = midi_to_note_name(midi)
+    assert abs(midi - 69) < 0.1 and note_name == "A4", f"A4 conversion incorrect: {midi}, {note_name}"
+
+    # Test C4 = 261.63 Hz = MIDI 60
+    freq = 261.63
+    midi = hz_to_midi(freq)
+    note_name = midi_to_note_name(midi)
+    assert abs(midi - 60) < 0.1 and note_name == "C4", f"C4 conversion incorrect: {midi}, {note_name}"
 
 
 def main():

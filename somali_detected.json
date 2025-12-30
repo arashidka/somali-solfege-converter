@@ -1,0 +1,852 @@
+[
+  {
+    "start_time": 0.0,
+    "end_time": 3.9067573696145126,
+    "duration": 3.9067573696145126,
+    "mean_pitch": 188.78322914870628,
+    "median_pitch": 187.91419219970703,
+    "midi_note": 54,
+    "note_name": "F#3",
+    "solfege": "fa#"
+  },
+  {
+    "start_time": 3.9299773242630387,
+    "end_time": 4.028662131519274,
+    "duration": 0.09868480725623563,
+    "mean_pitch": 83.11768510606554,
+    "median_pitch": 83.1444206237793,
+    "midi_note": 40,
+    "note_name": "E2",
+    "solfege": "mi"
+  },
+  {
+    "start_time": 4.0344671201814055,
+    "end_time": 5.363809523809524,
+    "duration": 1.329342403628118,
+    "mean_pitch": 170.95282904583476,
+    "median_pitch": 169.03414154052734,
+    "midi_note": 53,
+    "note_name": "F3",
+    "solfege": "fa"
+  },
+  {
+    "start_time": 5.369614512471656,
+    "end_time": 5.973333333333334,
+    "duration": 0.6037188208616779,
+    "mean_pitch": 159.7961381458101,
+    "median_pitch": 141.14071655273438,
+    "midi_note": 51,
+    "note_name": "D#3",
+    "solfege": "re#"
+  },
+  {
+    "start_time": 5.979138321995465,
+    "end_time": 6.5364172335600905,
+    "duration": 0.5572789115646257,
+    "mean_pitch": 94.56979606077843,
+    "median_pitch": 93.3066177368164,
+    "midi_note": 42,
+    "note_name": "F#2",
+    "solfege": "fa#"
+  },
+  {
+    "start_time": 6.542222222222223,
+    "end_time": 6.600272108843537,
+    "duration": 0.058049886621314606,
+    "mean_pitch": 224.42947110262784,
+    "median_pitch": 222.25440979003906,
+    "midi_note": 57,
+    "note_name": "A3",
+    "solfege": "la"
+  },
+  {
+    "start_time": 6.606077097505669,
+    "end_time": 6.797641723356009,
+    "duration": 0.19156462585034006,
+    "mean_pitch": 83.72693476957433,
+    "median_pitch": 83.74885940551758,
+    "midi_note": 40,
+    "note_name": "E2",
+    "solfege": "mi"
+  },
+  {
+    "start_time": 6.832471655328798,
+    "end_time": 7.581315192743764,
+    "duration": 0.7488435374149658,
+    "mean_pitch": 93.73149977463942,
+    "median_pitch": 93.68421173095703,
+    "midi_note": 42,
+    "note_name": "F#2",
+    "solfege": "fa#"
+  },
+  {
+    "start_time": 7.587120181405895,
+    "end_time": 7.958639455782313,
+    "duration": 0.37151927437641774,
+    "mean_pitch": 239.21908592810996,
+    "median_pitch": 248.67230224609375,
+    "midi_note": 58,
+    "note_name": "A#3",
+    "solfege": "la#"
+  },
+  {
+    "start_time": 7.993469387755102,
+    "end_time": 8.411428571428571,
+    "duration": 0.41795918367346907,
+    "mean_pitch": 219.21490206783764,
+    "median_pitch": 223.55979919433594,
+    "midi_note": 57,
+    "note_name": "A3",
+    "solfege": "la"
+  },
+  {
+    "start_time": 8.469478458049887,
+    "end_time": 9.108027210884353,
+    "duration": 0.6385487528344669,
+    "mean_pitch": 222.44166001328477,
+    "median_pitch": 225.3846435546875,
+    "midi_note": 57,
+    "note_name": "A3",
+    "solfege": "la"
+  },
+  {
+    "start_time": 9.113832199546485,
+    "end_time": 9.253151927437642,
+    "duration": 0.13931972789115754,
+    "mean_pitch": 103.57207458496094,
+    "median_pitch": 62.09122085571289,
+    "midi_note": 44,
+    "note_name": "G#2",
+    "solfege": "so#"
+  },
+  {
+    "start_time": 9.258956916099773,
+    "end_time": 9.438911564625851,
+    "duration": 0.17995464852607768,
+    "mean_pitch": 84.38695907592773,
+    "median_pitch": 84.50383758544922,
+    "midi_note": 40,
+    "note_name": "E2",
+    "solfege": "mi"
+  },
+  {
+    "start_time": 9.450521541950113,
+    "end_time": 9.537596371882087,
+    "duration": 0.08707482993197324,
+    "mean_pitch": 177.346510887146,
+    "median_pitch": 169.32455444335938,
+    "midi_note": 53,
+    "note_name": "F3",
+    "solfege": "fa"
+  },
+  {
+    "start_time": 9.543401360544218,
+    "end_time": 10.553469387755102,
+    "duration": 1.0100680272108846,
+    "mean_pitch": 120.8491570172991,
+    "median_pitch": 94.11658477783203,
+    "midi_note": 47,
+    "note_name": "B2",
+    "solfege": "ti"
+  },
+  {
+    "start_time": 10.559274376417234,
+    "end_time": 10.62312925170068,
+    "duration": 0.06385487528344669,
+    "mean_pitch": 222.99919255574545,
+    "median_pitch": 225.06631469726562,
+    "midi_note": 57,
+    "note_name": "A3",
+    "solfege": "la"
+  },
+  {
+    "start_time": 10.628934240362812,
+    "end_time": 12.49233560090703,
+    "duration": 1.8634013605442181,
+    "mean_pitch": 150.1307249365386,
+    "median_pitch": 124.55979537963867,
+    "midi_note": 50,
+    "note_name": "D3",
+    "solfege": "re"
+  },
+  {
+    "start_time": 12.49814058956916,
+    "end_time": 14.63437641723356,
+    "duration": 2.1362358276643985,
+    "mean_pitch": 113.98357329329824,
+    "median_pitch": 93.48456573486328,
+    "midi_note": 46,
+    "note_name": "A#2",
+    "solfege": "la#"
+  },
+  {
+    "start_time": 14.657596371882086,
+    "end_time": 15.772154195011337,
+    "duration": 1.1145578231292514,
+    "mean_pitch": 227.85556816931216,
+    "median_pitch": 224.72824096679688,
+    "midi_note": 58,
+    "note_name": "A#3",
+    "solfege": "la#"
+  },
+  {
+    "start_time": 15.777959183673469,
+    "end_time": 15.8940589569161,
+    "duration": 0.11609977324263099,
+    "mean_pitch": 63.00007865542457,
+    "median_pitch": 61.99915313720703,
+    "midi_note": 35,
+    "note_name": "B1",
+    "solfege": "ti"
+  },
+  {
+    "start_time": 15.89986394557823,
+    "end_time": 15.981133786848073,
+    "duration": 0.08126984126984205,
+    "mean_pitch": 220.854443359375,
+    "median_pitch": 220.36102294921875,
+    "midi_note": 57,
+    "note_name": "A3",
+    "solfege": "la"
+  },
+  {
+    "start_time": 15.986938775510204,
+    "end_time": 17.153741496598638,
+    "duration": 1.166802721088434,
+    "mean_pitch": 116.07033100694713,
+    "median_pitch": 93.51724624633789,
+    "midi_note": 46,
+    "note_name": "A#2",
+    "solfege": "la#"
+  },
+  {
+    "start_time": 17.159546485260773,
+    "end_time": 19.922721088435374,
+    "duration": 2.763174603174601,
+    "mean_pitch": 173.1052885315453,
+    "median_pitch": 186.88204956054688,
+    "midi_note": 53,
+    "note_name": "F3",
+    "solfege": "fa"
+  },
+  {
+    "start_time": 19.98077097505669,
+    "end_time": 20.24780045351474,
+    "duration": 0.26702947845804914,
+    "mean_pitch": 248.05877685546875,
+    "median_pitch": 249.0265350341797,
+    "midi_note": 59,
+    "note_name": "B3",
+    "solfege": "ti"
+  },
+  {
+    "start_time": 20.25360544217687,
+    "end_time": 20.35809523809524,
+    "duration": 0.1044897959183686,
+    "mean_pitch": 83.10258764969676,
+    "median_pitch": 83.11195373535156,
+    "midi_note": 40,
+    "note_name": "E2",
+    "solfege": "mi"
+  },
+  {
+    "start_time": 20.36390022675737,
+    "end_time": 20.48580498866213,
+    "duration": 0.12190476190476218,
+    "mean_pitch": 249.1123053810813,
+    "median_pitch": 249.16191864013672,
+    "midi_note": 59,
+    "note_name": "B3",
+    "solfege": "ti"
+  },
+  {
+    "start_time": 20.509024943310656,
+    "end_time": 20.909569160997734,
+    "duration": 0.40054421768707726,
+    "mean_pitch": 249.01675218854632,
+    "median_pitch": 248.97836303710938,
+    "midi_note": 59,
+    "note_name": "B3",
+    "solfege": "ti"
+  },
+  {
+    "start_time": 20.93278911564626,
+    "end_time": 21.072108843537414,
+    "duration": 0.13931972789115576,
+    "mean_pitch": 249.3736572265625,
+    "median_pitch": 249.42254638671875,
+    "midi_note": 59,
+    "note_name": "B3",
+    "solfege": "ti"
+  },
+  {
+    "start_time": 21.095328798185943,
+    "end_time": 21.716462585034012,
+    "duration": 0.6211337868480697,
+    "mean_pitch": 224.78678830464682,
+    "median_pitch": 224.91881561279297,
+    "midi_note": 57,
+    "note_name": "A3",
+    "solfege": "la"
+  },
+  {
+    "start_time": 21.722267573696143,
+    "end_time": 22.529160997732426,
+    "duration": 0.8068934240362822,
+    "mean_pitch": 155.89256199428013,
+    "median_pitch": 168.4607925415039,
+    "midi_note": 51,
+    "note_name": "D#3",
+    "solfege": "re#"
+  },
+  {
+    "start_time": 22.534965986394557,
+    "end_time": 22.58721088435374,
+    "duration": 0.0522448979591843,
+    "mean_pitch": 61.637128067016604,
+    "median_pitch": 61.6051139831543,
+    "midi_note": 35,
+    "note_name": "B1",
+    "solfege": "ti"
+  },
+  {
+    "start_time": 22.593015873015872,
+    "end_time": 22.755555555555556,
+    "duration": 0.1625396825396841,
+    "mean_pitch": 173.7297258048222,
+    "median_pitch": 173.73377990722656,
+    "midi_note": 53,
+    "note_name": "F3",
+    "solfege": "fa"
+  },
+  {
+    "start_time": 22.784580498866212,
+    "end_time": 23.678548752834466,
+    "duration": 0.8939682539682536,
+    "mean_pitch": 158.06284809727822,
+    "median_pitch": 169.25192260742188,
+    "midi_note": 51,
+    "note_name": "D#3",
+    "solfege": "re#"
+  },
+  {
+    "start_time": 23.684353741496597,
+    "end_time": 25.344580498866215,
+    "duration": 1.6602267573696174,
+    "mean_pitch": 163.17885263954722,
+    "median_pitch": 167.84201049804688,
+    "midi_note": 52,
+    "note_name": "E3",
+    "solfege": "mi"
+  },
+  {
+    "start_time": 25.350385487528346,
+    "end_time": 25.663854875283448,
+    "duration": 0.31346938775510225,
+    "mean_pitch": 153.81967357288707,
+    "median_pitch": 140.54200744628906,
+    "midi_note": 51,
+    "note_name": "D#3",
+    "solfege": "re#"
+  },
+  {
+    "start_time": 25.692879818594104,
+    "end_time": 26.81904761904762,
+    "duration": 1.1261678004535156,
+    "mean_pitch": 165.90529503455528,
+    "median_pitch": 167.52040100097656,
+    "midi_note": 52,
+    "note_name": "E3",
+    "solfege": "mi"
+  },
+  {
+    "start_time": 26.82485260770975,
+    "end_time": 28.398004535147393,
+    "duration": 1.5731519274376424,
+    "mean_pitch": 126.01511946846458,
+    "median_pitch": 124.41385650634766,
+    "midi_note": 47,
+    "note_name": "B2",
+    "solfege": "ti"
+  },
+  {
+    "start_time": 28.421224489795918,
+    "end_time": 29.698321995464852,
+    "duration": 1.2770975056689338,
+    "mean_pitch": 114.65625397004693,
+    "median_pitch": 139.72755432128906,
+    "midi_note": 46,
+    "note_name": "A#2",
+    "solfege": "la#"
+  },
+  {
+    "start_time": 29.704126984126983,
+    "end_time": 30.95219954648526,
+    "duration": 1.2480725623582778,
+    "mean_pitch": 122.7613714006212,
+    "median_pitch": 93.5865478515625,
+    "midi_note": 47,
+    "note_name": "B2",
+    "solfege": "ti"
+  },
+  {
+    "start_time": 30.958004535147392,
+    "end_time": 32.26993197278912,
+    "duration": 1.3119274376417245,
+    "mean_pitch": 230.6779463175635,
+    "median_pitch": 224.3273162841797,
+    "midi_note": 58,
+    "note_name": "A#3",
+    "solfege": "la#"
+  },
+  {
+    "start_time": 32.275736961451244,
+    "end_time": 32.35700680272109,
+    "duration": 0.08126984126984382,
+    "mean_pitch": 82.65622914632162,
+    "median_pitch": 82.63639068603516,
+    "midi_note": 40,
+    "note_name": "E2",
+    "solfege": "mi"
+  },
+  {
+    "start_time": 32.40344671201814,
+    "end_time": 33.00716553287982,
+    "duration": 0.6037188208616797,
+    "mean_pitch": 89.30729682559058,
+    "median_pitch": 92.55360412597656,
+    "midi_note": 41,
+    "note_name": "F2",
+    "solfege": "fa"
+  },
+  {
+    "start_time": 33.04780045351474,
+    "end_time": 33.25097505668934,
+    "duration": 0.20317460317460245,
+    "mean_pitch": 83.67638270060222,
+    "median_pitch": 83.69174194335938,
+    "midi_note": 40,
+    "note_name": "E2",
+    "solfege": "mi"
+  },
+  {
+    "start_time": 33.274195011337866,
+    "end_time": 33.674739229024944,
+    "duration": 0.40054421768707726,
+    "mean_pitch": 93.84634922572545,
+    "median_pitch": 93.8670539855957,
+    "midi_note": 42,
+    "note_name": "F#2",
+    "solfege": "fa#"
+  },
+  {
+    "start_time": 33.68054421768707,
+    "end_time": 36.35083900226758,
+    "duration": 2.6702947845805056,
+    "mean_pitch": 176.5263346756875,
+    "median_pitch": 187.14405822753906,
+    "midi_note": 53,
+    "note_name": "F3",
+    "solfege": "fa"
+  },
+  {
+    "start_time": 36.385668934240364,
+    "end_time": 36.53659863945578,
+    "duration": 0.15092970521541815,
+    "mean_pitch": 224.97781259042245,
+    "median_pitch": 224.8806915283203,
+    "midi_note": 57,
+    "note_name": "A3",
+    "solfege": "la"
+  },
+  {
+    "start_time": 36.577233560090704,
+    "end_time": 36.635283446712016,
+    "duration": 0.05804988662131194,
+    "mean_pitch": 749.0955422141335,
+    "median_pitch": 749.140869140625,
+    "midi_note": 78,
+    "note_name": "F#5",
+    "solfege": "fa#"
+  },
+  {
+    "start_time": 36.67011337868481,
+    "end_time": 36.75138321995465,
+    "duration": 0.08126984126983672,
+    "mean_pitch": 225.81719970703125,
+    "median_pitch": 225.70477294921875,
+    "midi_note": 57,
+    "note_name": "A3",
+    "solfege": "la"
+  },
+  {
+    "start_time": 36.75718820861678,
+    "end_time": 36.902312925170065,
+    "duration": 0.1451247165532834,
+    "mean_pitch": 83.1351330096905,
+    "median_pitch": 83.1097183227539,
+    "midi_note": 40,
+    "note_name": "E2",
+    "solfege": "mi"
+  },
+  {
+    "start_time": 36.9081179138322,
+    "end_time": 37.122902494331065,
+    "duration": 0.21478458049886484,
+    "mean_pitch": 231.54796279104133,
+    "median_pitch": 227.11158752441406,
+    "midi_note": 58,
+    "note_name": "A#3",
+    "solfege": "la#"
+  },
+  {
+    "start_time": 37.15773242630385,
+    "end_time": 38.58575963718821,
+    "duration": 1.428027210884359,
+    "mean_pitch": 208.8346014910864,
+    "median_pitch": 224.80816650390625,
+    "midi_note": 56,
+    "note_name": "G#3",
+    "solfege": "so#"
+  },
+  {
+    "start_time": 38.626394557823126,
+    "end_time": 39.038548752834465,
+    "duration": 0.41215419501133965,
+    "mean_pitch": 180.76762199401855,
+    "median_pitch": 168.28713989257812,
+    "midi_note": 54,
+    "note_name": "F#3",
+    "solfege": "fa#"
+  },
+  {
+    "start_time": 39.0443537414966,
+    "end_time": 39.11981859410431,
+    "duration": 0.07546485260770908,
+    "mean_pitch": 61.20805849347796,
+    "median_pitch": 61.218482971191406,
+    "midi_note": 35,
+    "note_name": "B1",
+    "solfege": "ti"
+  },
+  {
+    "start_time": 39.12562358276644,
+    "end_time": 39.2649433106576,
+    "duration": 0.13931972789116287,
+    "mean_pitch": 187.7410009765625,
+    "median_pitch": 187.89828491210938,
+    "midi_note": 54,
+    "note_name": "F#3",
+    "solfege": "fa#"
+  },
+  {
+    "start_time": 39.32299319727891,
+    "end_time": 41.08190476190476,
+    "duration": 1.7589115646258477,
+    "mean_pitch": 187.33070273148385,
+    "median_pitch": 169.79004669189453,
+    "midi_note": 54,
+    "note_name": "F#3",
+    "solfege": "fa#"
+  },
+  {
+    "start_time": 41.087709750566894,
+    "end_time": 41.50566893424036,
+    "duration": 0.4179591836734673,
+    "mean_pitch": 147.3179555396511,
+    "median_pitch": 140.69749450683594,
+    "midi_note": 50,
+    "note_name": "D3",
+    "solfege": "re"
+  },
+  {
+    "start_time": 41.511473922902496,
+    "end_time": 41.68562358276644,
+    "duration": 0.17414965986394293,
+    "mean_pitch": 61.34718482725082,
+    "median_pitch": 61.398860931396484,
+    "midi_note": 35,
+    "note_name": "B1",
+    "solfege": "ti"
+  },
+  {
+    "start_time": 41.691428571428574,
+    "end_time": 42.06875283446712,
+    "duration": 0.3773242630385454,
+    "mean_pitch": 254.90802279385653,
+    "median_pitch": 239.03630828857422,
+    "midi_note": 60,
+    "note_name": "C4",
+    "solfege": "do"
+  },
+  {
+    "start_time": 42.10358276643991,
+    "end_time": 42.707301587301586,
+    "duration": 0.6037188208616797,
+    "mean_pitch": 243.62992481050037,
+    "median_pitch": 168.31175231933594,
+    "midi_note": 59,
+    "note_name": "B3",
+    "solfege": "ti"
+  },
+  {
+    "start_time": 42.71310657596372,
+    "end_time": 44.00181405895692,
+    "duration": 1.2887074829931962,
+    "mean_pitch": 138.33269463098637,
+    "median_pitch": 125.4749526977539,
+    "midi_note": 49,
+    "note_name": "C#3",
+    "solfege": "do#"
+  },
+  {
+    "start_time": 44.007619047619045,
+    "end_time": 44.32689342403628,
+    "duration": 0.31927437641723344,
+    "mean_pitch": 94.69283485412598,
+    "median_pitch": 124.56262969970703,
+    "midi_note": 42,
+    "note_name": "F#2",
+    "solfege": "fa#"
+  },
+  {
+    "start_time": 44.33269841269841,
+    "end_time": 45.5633560090703,
+    "duration": 1.2306575963718842,
+    "mean_pitch": 146.52185796460077,
+    "median_pitch": 140.533935546875,
+    "midi_note": 50,
+    "note_name": "D3",
+    "solfege": "re"
+  },
+  {
+    "start_time": 45.569160997732425,
+    "end_time": 46.968163265306124,
+    "duration": 1.3990022675736995,
+    "mean_pitch": 93.59998838566551,
+    "median_pitch": 93.53564453125,
+    "midi_note": 42,
+    "note_name": "F#2",
+    "solfege": "fa#"
+  },
+  {
+    "start_time": 46.97396825396825,
+    "end_time": 48.4368253968254,
+    "duration": 1.4628571428571462,
+    "mean_pitch": 215.31122960026556,
+    "median_pitch": 224.17845153808594,
+    "midi_note": 57,
+    "note_name": "A3",
+    "solfege": "la"
+  },
+  {
+    "start_time": 48.442630385487526,
+    "end_time": 48.58195011337868,
+    "duration": 0.13931972789115576,
+    "mean_pitch": 62.11166046142578,
+    "median_pitch": 62.112422943115234,
+    "midi_note": 35,
+    "note_name": "B1",
+    "solfege": "ti"
+  },
+  {
+    "start_time": 48.61097505668934,
+    "end_time": 49.83002267573696,
+    "duration": 1.2190476190476218,
+    "mean_pitch": 92.65200776737449,
+    "median_pitch": 93.57109069824219,
+    "midi_note": 42,
+    "note_name": "F#2",
+    "solfege": "fa#"
+  },
+  {
+    "start_time": 49.83582766439909,
+    "end_time": 52.81378684807256,
+    "duration": 2.9779591836734696,
+    "mean_pitch": 159.0026396962919,
+    "median_pitch": 140.43604278564453,
+    "midi_note": 51,
+    "note_name": "D#3",
+    "solfege": "re#"
+  },
+  {
+    "start_time": 52.819591836734695,
+    "end_time": 54.619138321995464,
+    "duration": 1.7995464852607697,
+    "mean_pitch": 177.76974544954453,
+    "median_pitch": 187.0773162841797,
+    "midi_note": 53,
+    "note_name": "F3",
+    "solfege": "fa"
+  },
+  {
+    "start_time": 54.6249433106576,
+    "end_time": 55.530521541950115,
+    "duration": 0.905578231292516,
+    "mean_pitch": 129.29812510302114,
+    "median_pitch": 140.49667358398438,
+    "midi_note": 48,
+    "note_name": "C3",
+    "solfege": "do"
+  },
+  {
+    "start_time": 55.53632653061224,
+    "end_time": 57.88734693877551,
+    "duration": 2.351020408163265,
+    "mean_pitch": 188.72630240529628,
+    "median_pitch": 186.8721466064453,
+    "midi_note": 54,
+    "note_name": "F#3",
+    "solfege": "fa#"
+  },
+  {
+    "start_time": 57.89315192743764,
+    "end_time": 58.049886621315196,
+    "duration": 0.1567346938775529,
+    "mean_pitch": 62.1627516065325,
+    "median_pitch": 62.1425895690918,
+    "midi_note": 35,
+    "note_name": "B1",
+    "solfege": "ti"
+  },
+  {
+    "start_time": 58.05569160997732,
+    "end_time": 58.671020408163265,
+    "duration": 0.6153287981859421,
+    "mean_pitch": 140.33690650440823,
+    "median_pitch": 140.51443481445312,
+    "midi_note": 49,
+    "note_name": "C#3",
+    "solfege": "do#"
+  },
+  {
+    "start_time": 58.6768253968254,
+    "end_time": 59.25151927437642,
+    "duration": 0.5746938775510202,
+    "mean_pitch": 162.1771019744873,
+    "median_pitch": 167.51763916015625,
+    "midi_note": 52,
+    "note_name": "E3",
+    "solfege": "mi"
+  },
+  {
+    "start_time": 59.25732426303855,
+    "end_time": 60.662131519274375,
+    "duration": 1.4048072562358271,
+    "mean_pitch": 132.6190401242103,
+    "median_pitch": 121.79283905029297,
+    "midi_note": 48,
+    "note_name": "C3",
+    "solfege": "do"
+  },
+  {
+    "start_time": 60.66793650793651,
+    "end_time": 60.87691609977324,
+    "duration": 0.2089795918367301,
+    "mean_pitch": 191.19638164623365,
+    "median_pitch": 248.3785858154297,
+    "midi_note": 55,
+    "note_name": "G3",
+    "solfege": "so"
+  },
+  {
+    "start_time": 60.9059410430839,
+    "end_time": 62.42684807256236,
+    "duration": 1.5209070294784581,
+    "mean_pitch": 170.81081641309615,
+    "median_pitch": 167.87075805664062,
+    "midi_note": 53,
+    "note_name": "F3",
+    "solfege": "fa"
+  },
+  {
+    "start_time": 62.43265306122449,
+    "end_time": 63.33823129251701,
+    "duration": 0.905578231292516,
+    "mean_pitch": 169.1812779128931,
+    "median_pitch": 186.61720275878906,
+    "midi_note": 52,
+    "note_name": "E3",
+    "solfege": "mi"
+  },
+  {
+    "start_time": 63.344036281179136,
+    "end_time": 68.1447619047619,
+    "duration": 4.800725623582771,
+    "mean_pitch": 185.2066206678676,
+    "median_pitch": 186.88412475585938,
+    "midi_note": 54,
+    "note_name": "F#3",
+    "solfege": "fa#"
+  },
+  {
+    "start_time": 68.15056689342404,
+    "end_time": 68.27827664399094,
+    "duration": 0.12770975056689338,
+    "mean_pitch": 61.98251309602157,
+    "median_pitch": 61.984832763671875,
+    "midi_note": 35,
+    "note_name": "B1",
+    "solfege": "ti"
+  },
+  {
+    "start_time": 68.30149659863946,
+    "end_time": 69.90367346938775,
+    "duration": 1.6021768707482948,
+    "mean_pitch": 100.56292863701225,
+    "median_pitch": 93.34223937988281,
+    "midi_note": 43,
+    "note_name": "G2",
+    "solfege": "so"
+  },
+  {
+    "start_time": 69.99074829931973,
+    "end_time": 70.06621315192744,
+    "duration": 0.07546485260770908,
+    "mean_pitch": 464.4878365652902,
+    "median_pitch": 472.4757843017578,
+    "midi_note": 70,
+    "note_name": "A#4",
+    "solfege": "la#"
+  },
+  {
+    "start_time": 70.07201814058956,
+    "end_time": 70.57124716553288,
+    "duration": 0.4992290249433182,
+    "mean_pitch": 116.69294159987876,
+    "median_pitch": 124.30199432373047,
+    "midi_note": 46,
+    "note_name": "A#2",
+    "solfege": "la#"
+  },
+  {
+    "start_time": 70.6292970521542,
+    "end_time": 70.80344671201814,
+    "duration": 0.17414965986394293,
+    "mean_pitch": 123.95159272224673,
+    "median_pitch": 123.97303009033203,
+    "midi_note": 47,
+    "note_name": "B2",
+    "solfege": "ti"
+  },
+  {
+    "start_time": 70.84408163265306,
+    "end_time": 70.9601814058957,
+    "duration": 0.1160997732426381,
+    "mean_pitch": 124.18224516369048,
+    "median_pitch": 124.22606658935547,
+    "midi_note": 47,
+    "note_name": "B2",
+    "solfege": "ti"
+  },
+  {
+    "start_time": 70.96598639455782,
+    "end_time": 73.53759637188209,
+    "duration": 2.5716099773242718,
+    "mean_pitch": 1206.9598256703969,
+    "median_pitch": 1225.0,
+    "midi_note": 86,
+    "note_name": "D6",
+    "solfege": "re"
+  }
+]

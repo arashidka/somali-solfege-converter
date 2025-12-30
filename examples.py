@@ -17,13 +17,13 @@ def example_basic_usage():
     print("=" * 60)
     
     # This is a placeholder example - you would replace with your actual file
-    # samples, sr = prepare_audio_input("your_audio.wav")
+    # samples, sr = prepare_audio_input(r"C:\Users\hp\OneDrive\Documents\GitHub\somali-solfege-converter2\TestAudio.wav")
     # print(f"Loaded {len(samples)/sr:.2f}s of audio")
     # print(f"Sample rate: {sr}Hz")
     # print(f"Sample values range: [{samples.min():.3f}, {samples.max():.3f}]")
     
     print("To use this example:")
-    print("1. Replace 'your_audio.wav' with your actual file path")
+    print("1. Replace 'C:\\Users\\hp\\OneDrive\\Documents\\GitHub\\somali-solfege-converter2\\TestAudio.wav' with your actual file path")
     print("2. Uncomment the code above")
     print("3. Run this script")
     print()
@@ -39,14 +39,14 @@ def example_video_extraction():
     
     # Extract audio from testVideo.mp4
     try:
-        samples, sr = prepare_audio_input("testVideo.mp4", target_sr=22050)
-        print(f"✅ Successfully extracted {len(samples)/sr:.2f}s of audio from testVideo.mp4")
+        samples, sr = prepare_audio_input(r"C:\Users\hp\OneDrive\Documents\GitHub\somali-solfege-converter2\testVideo.mp4", target_sr=22050)
+        print(f"✅ Successfully extracted {len(samples)/sr:.2f}s of audio from C:\\Users\\hp\\OneDrive\\Documents\\GitHub\\somali-solfege-converter2\\testVideo.mp4")
         print(f"   Sample rate: {sr}Hz")
         print(f"   Number of samples: {len(samples):,}")
         print(f"   Audio range: [{samples.min():.3f}, {samples.max():.3f}]")
     except Exception as e:
-        print(f"❌ Error processing testVideo.mp4: {e}")
-        print("   Make sure the file exists in the project folder")
+        print(f"❌ Error processing C:\\Users\\hp\\OneDrive\\Documents\\GitHub\\somali-solfege-converter2\\testVideo.mp4: {e}")
+        print("   Make sure C:\\Users\\hp\\OneDrive\\Documents\\GitHub\\somali-solfege-converter2\\testVideo.mp4 exists")
     
     print()
 
@@ -61,7 +61,7 @@ def example_file_info():
     
     # Get info about testVideo.mp4
     try:
-        info = get_audio_info("testVideo.mp4")
+        info = get_audio_info(r"C:\Users\hp\OneDrive\Documents\GitHub\somali-solfege-converter2\testVideo.mp4")
         print(f"✅ File: {info['path']}")
         print(f"   Format: {info['extension']}")
         print(f"   Size: {info['size_mb']:.2f} MB")
@@ -70,7 +70,7 @@ def example_file_info():
         print(f"   Channels: {info['channels']}")
     except Exception as e:
         print(f"❌ Error getting file info: {e}")
-        print("   Make sure testVideo.mp4 exists in the project folder")
+        print("   Make sure C:\\Users\\hp\\OneDrive\\Documents\\GitHub\\somali-solfege-converter2\\testVideo.mp4 exists")
     
     print()
 
@@ -84,7 +84,7 @@ def example_with_analysis():
     print("=" * 60)
     
     # This is a placeholder example
-    # samples, sr = prepare_audio_input("your_audio.wav")
+    # samples, sr = prepare_audio_input(r"C:\Users\hp\OneDrive\Documents\GitHub\somali-solfege-converter2\TestAudio.wav")
     # 
     # # Basic statistics
     # duration = len(samples) / sr
@@ -97,7 +97,7 @@ def example_with_analysis():
     # print(f"Dynamic Range: {20 * np.log10(peak_amplitude/rms_energy):.2f} dB")
     
     print("To use this example:")
-    print("1. Replace 'your_audio.wav' with your actual file path")
+    print("1. Replace 'C:\\Users\\hp\\OneDrive\\Documents\\GitHub\\somali-solfege-converter2\\TestAudio.wav' with your actual file path")
     print("2. Uncomment the code above")
     print("3. Run this script")
     print()

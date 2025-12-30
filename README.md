@@ -64,7 +64,7 @@ from audio_processor import prepare_audio_input, check_dependencies
 check_dependencies()
 
 # Process audio from video or audio file
-samples, sample_rate = prepare_audio_input("your_file.mp4")
+samples, sample_rate = prepare_audio_input(r"C:\Users\hp\OneDrive\Documents\GitHub\somali-solfege-converter2\testVideo.mp4")
 
 # samples is a numpy array of normalized audio data
 # sample_rate is actual rate after resampling
